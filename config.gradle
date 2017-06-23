@@ -1,0 +1,42 @@
+ext {
+    android = [
+            compileSdkVersion: 25,          //编译版本
+            buildToolsVersion: "25.0.3",    //构建工具版本
+            minSdkVersion    : 19,          //最低运行版本
+            targetSdkVersion : 25,          //目标版
+
+            libVersionCode   : 1,
+            libVersionName   : "1.0",
+            versionCode      : 1,           //app内部版本
+            versionName      : "1.0"        //app版本号
+    ]
+    library = [
+            "multidex"                 : 'com.android.support:multidex:1.0.1',
+
+            "butterknife"              : 'com.jakewharton:butterknife:8.6.0',
+            "butterknife-compiler"     : 'com.jakewharton:butterknife-compiler:8.6.0',
+
+            "permissions"              : 'com.github.hotchemi:permissionsdispatcher:2.3.2',
+            "permissions-processor"    : 'com.github.hotchemi:permissionsdispatcher-processor:2.3.2',
+
+            "retrofit2"                : 'com.squareup.retrofit2:retrofit:2.2.0',
+            "retrofit2-converter-gson" : 'com.squareup.retrofit2:converter-gson:2.2.0',
+            "retrofit2-adapter-rxjava2": 'com.squareup.retrofit2:adapter-rxjava2:2.2.0',
+            "logging-interceptor"      : 'com.squareup.okhttp3:logging-interceptor:3.6.0',
+            "gson"                     : 'com.google.code.gson:gson:2.8.0',
+
+            "rxjava"                   : 'io.reactivex.rxjava2:rxjava:2.0.8',
+            "rxandroid"                : 'io.reactivex.rxjava2:rxandroid:2.0.1',
+            "rxlifecycle"              : 'com.trello.rxlifecycle2:rxlifecycle:2.0.1',
+            "rxlifecycle-components"   : 'com.trello.rxlifecycle2:rxlifecycle-components:2.0.1',
+
+            "eventbus"                 : 'org.greenrobot:eventbus:3.0.0',
+            "logger"                   : 'com.orhanobut:logger:1.15',
+            "glide"                    : 'com.github.bumptech.glide:glide:3.7.0'
+    ]
+    app = [
+            "qiniu" : 'com.qiniu:qiniu-android-sdk:7.3.3',
+            "jpush" : 'cn.jiguang.sdk:jpush:3.0.5',
+            "jcore" : 'cn.jiguang.sdk:jcore:1.1.2',
+    ]
+}
