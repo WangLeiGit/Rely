@@ -12,7 +12,7 @@ import retrofit2.Response;
 
 public abstract class ResultCallBack<T> implements Callback<Result<T>> {
     @Override public void onResponse(Call<Result<T>> call, Response<Result<T>> response) {
-        if (response != null) {
+        if (response != null && response.body()!=null) {
             if (response.body().getCode() == Constants.NET_CODE_SUCCESS) {
                 handlerResult(true, null, response.body().getResult());
             } else {
